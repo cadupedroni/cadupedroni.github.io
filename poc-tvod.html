@@ -21,6 +21,9 @@ $.cookie('name', 'value');
           type: "POST",
           url: 'http://projeto-9.homolog.infra:6049/api/v1/cart/94661469641',
           dataType: 'json',
+          xhrFields: {
+              withCredentials: true
+          },
           data: {},
           headers: {
             "Content-Type": "application/json"
